@@ -1,0 +1,121 @@
+  /* Estilo do cabeçalho superior */
+  .top-header {
+    background: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-header img {
+    height: 50px;
+}
+
+/* Ícones de redes sociais */
+.social-icons a {
+    margin-right: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Modo escuro */
+.dark-mode-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+/* Barra de busca */
+.search-bar {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-bar input {
+    padding-left: 30px; 
+}
+
+.search-bar .btn {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .btn i {
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(173, 0, 0);
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    filter: blur(1.5px);
+
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-caption h1 {
+    font-size: clamp(24px, 5vw, 50px);
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: clamp(16px, 3vw, 30px);
+}
+
+.carousel-caption .btn {
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .top-header {
+    background-color: #1a1a1a;
+}
+/* Estilo para a seção de eventos */
+.events-section {
+background-color: #f8f9fa;
+}
+
+.events-section .card {
+border: none;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.events-section .card:hover {
+transform: translateY(-10px);
+}
+
+.events-section .card-img-top {
+height: 200px;
+object-fit: cover;
+}
+
+.events-section .card-body {
+text-align: center;
+}
